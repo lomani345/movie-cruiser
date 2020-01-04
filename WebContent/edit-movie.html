@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit movie</title>
+<link rel="shortcut icon" href="images/logo.png" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h3 class="movie-Cruiser">Movie Cruiser</h3>
+        <img src="images/logo.png" alt="logo" />
+        <nav>
+            <a href="movie-list-admin.html" class="movie">Movies</a>
+        </nav>
+    </header>
+    <h1 class="edit-movie">Edit Movie</h1>
+    <form action="edit-movie-status.html" method="post" name="movie" onsubmit="return validate()">
+        <table class="edit-table" cellpadding=3 cellspacing=3>
+            <tr>
+                <td><label for="Name"><b>Title</b></label></td>
+            </tr>
+            <tr>
+                <td colspan=7><input type="textbox" id="Name" name="title" autofocus size=120
+                    spellcheck="false" autocomplete="off" placeholder="Avengers-End Game"></td>
+            </tr>
+            <tr>
+                <td><label for="gross"><b>Gross($)</b></label></td>
+                <td><label><b>Active</b></label></td>
+                <td><label><b>Date of Launch</b></label></td>
+                <td><label><b>Genre</b></label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="gross" name="Gross" autofocus size=15
+                    spellcheck="false" autocomplete="off" placeholder="2787965087"></td>
+                <td><input type="radio" name="active" value="yes" />Yes <input type="radio"
+                    name="active" value="No" />No</td>
+                <td><input type="text" id="date" name="dateOfLaunch" autofocus size=20
+                    spellcheck="false" autocomplete="off" placeholder="27/04/2022"></td>
+                <td><select name="genre">
+                        <option></option>
+                        <option>Superhero</option>
+                        <option>Science Fiction</option>
+                        <option>Romance</option>
+                        <option>Comedy</option>
+                        <option>Adventure</option>
+                        <option>Thriller</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td height="12px"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="hasTeaser" value="Has Teaser" /><b>Has
+                        Teaser </b></td>
+            </tr>
+            <tr>
+                <td height="12px"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Save" class="button" /></td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <h4>Copyright&copy;2019</h4>
+    </footer>
+</body>
+</html>
