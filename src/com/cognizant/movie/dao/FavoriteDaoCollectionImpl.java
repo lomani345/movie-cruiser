@@ -26,8 +26,9 @@ public class FavoriteDaoCollectionImpl implements FavoriteDao {
         if (favorite == null || favorite.getFavoriteList().isEmpty()) {
             throw new FavoriteEmptyException();
         }
-
-        int total = favorite.getFavoriteList().size();
+        List<Movie> movie = favorite.getFavoriteList();
+        int total = 0;
+        total = movie.size();
         favorite.setTotal(total);
         return favorite;
 

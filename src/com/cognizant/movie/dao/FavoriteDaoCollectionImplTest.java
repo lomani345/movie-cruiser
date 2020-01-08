@@ -36,7 +36,7 @@ public class FavoriteDaoCollectionImplTest {
     }
 
     public static void testRemoveFavoriteById() {
-        System.out.println("Remove Favorite");
+        System.out.println("Remove Favorites");
         favoriteDao.removeFavoritesById(1, 3);
     }
 }
