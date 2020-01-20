@@ -13,8 +13,8 @@
         class="movie">Movies</a> <a href="ShowFavorite" class="favorites">Favorites</a> </nav> </header>
     <h1 class="favorites-name">Favorites</h1>
     <p class="add-to-favorite">
-        <b>No items in Favorites.Use 'Add to Favorite' option in </b><a href="ShowMovieListCustomer">Movie
-            List.</a>
+        <b>No items in Favorites.Use 'Add to Favorite' option in <a href="ShowMovieListCustomer">Movie
+                List.</a></b>
     </p>
     <footer>
     <h4>Copyright&copy;2019</h4>
