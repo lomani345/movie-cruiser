@@ -29,8 +29,9 @@ public class RemoveFavoriteServlet extends HttpServlet {
             Favorite favorite = favoriteDao.getAllFavorites(userId);
 
             List<Movie> movieList = favorite.getFavoriteList();
-            int noOfFavorite = 0;
-            noOfFavorite = movieList.size();
+            int total = 0;
+            total = movieList.size();
+            favorite.setTotal(total);
             request.setAttribute("movie", movieList);
             request.setAttribute("favorite", favorite);
             request.setAttribute("removeFavoriteStatus", true);

@@ -29,8 +29,7 @@ public class FavoriteDaoCollectionImplTest {
                 System.out.println(movie);
 
             }
-            System.out.println(
-                    "No.of Favorites: " + favoriteDao.getAllFavorites(1).getNoOfFavorite());
+            System.out.println("No.of Favorites: " + favoriteDao.getAllFavorites(1).getTotal());
         } catch (FavoriteEmptyException e) {
             System.out.println(e);
         }

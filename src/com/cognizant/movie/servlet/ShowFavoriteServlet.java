@@ -27,9 +27,9 @@ public class ShowFavoriteServlet extends HttpServlet {
             FavoriteDao favoriteDao = new FavoriteDaoCollectionImpl();
             Favorite favorite = favoriteDao.getAllFavorites(userId);
             List<Movie> movieList = favorite.getFavoriteList();
-            int noOfFavorite = 0;
-            noOfFavorite = movieList.size();
-            favorite.setNoOfFavorite(noOfFavorite);
+            int total = 0;
+            total = movieList.size();
+            favorite.setTotal(total);
 
             request.setAttribute("movie", movieList);
             request.setAttribute("favorite", favorite);

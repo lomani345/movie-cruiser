@@ -4,22 +4,16 @@ import java.util.List;
 
 public class Favorite {
     private List<Movie> favoriteList;
-    private int noOfFavorite;
+    private int total;
 
     public Favorite() {
 
     }
-
-    
-
-    public Favorite(List<Movie> favoriteList, int noOfFavorite) {
+    public Favorite(List<Movie> favoriteList, int total) {
         super();
         this.favoriteList = favoriteList;
-        this.noOfFavorite = noOfFavorite;
+        this.total = total;
     }
-
-
-
     public List<Movie> getFavoriteList() {
         return favoriteList;
     }
@@ -28,20 +22,22 @@ public class Favorite {
         this.favoriteList = favoriteList;
     }
 
-    public int getNoOfFavorite() {
-        return noOfFavorite;
+    public int getTotal() {
+        return total;
     }
 
-    public void setNoOfFavorite(int noOfFavorite) {
-        this.noOfFavorite = noOfFavorite;
+    public void setTotal(int total) {
+        this.total = total;
     }
-
-
-
     @Override
     public String toString() {
-        return "Favorite [favoriteList=" + favoriteList + ", noOfFavorite=" + noOfFavorite + "]";
+        return "Favorite [favoriteList=" + favoriteList + ", total=" + total + "]";
     }
 
+   
+
+    
+
+  
    
 }

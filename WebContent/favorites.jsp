@@ -44,7 +44,7 @@
         <tr></tr>
         <tr>
 
-            <td align="left"><b>No. of Favorites: ${favorite.getNoOfFavorite()}</b></td>
+            <td align="left"><b>No. of Favorites: ${favorite.getTotal()}</b></td>
 
         </tr>
     </table>

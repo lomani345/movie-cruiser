@@ -29,5 +29,4 @@ function validateMovieForm() {
         alert("Select one genre");
         return false;
     }
-}	
-	
+}
