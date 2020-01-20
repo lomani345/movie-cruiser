@@ -42,7 +42,7 @@ table{
     left:87%;
 }
 /*this is for all movie page movie cruiser heading that is inside header tag*/
-.movie-Cruiser{
+.movie-cruiser{
 	color:#fcfafa;
     top:0%;
     position:fixed;
@@ -52,7 +52,7 @@ table{
 /*this is for which page have 'Movies'as heading*/
 .movie-name{
 	color:#0f0f0f;
-    top:13%;
+    top:11%;
     position:fixed;
     left:8%;
 	font-size:30px;
@@ -60,7 +60,7 @@ table{
 /*this is for which page have 'favorites'as heading*/
 .favorites-name{
 	color:#0f0f0f;
-    top:15%;
+    top:11%;
     position:fixed;
     left:8%;
 	font-size:30px;	
@@ -86,10 +86,10 @@ table{
 }
 /*this is for edit-movie-ststus.html page*/
 .saved-successfully{
-    top:22%;
+    top:24%;
 	position:fixed;
 	left:7%;
-	font-size:26px;
+	font-size:23px;
 	color:#2a8f0b;
 }
 /*this is for edit-movie-ststus.html page*/
@@ -102,9 +102,9 @@ table{
 }
 /*this is for movie-list-customer-notification.html page*/
 .movie-favorite-successfully{
-	top:16%;
+	top:14%;
 	position:fixed;
-	left:30%;
+	left:26%;
 	font-size:30px;
 	color:#2a8f0b;
 }
@@ -118,10 +118,10 @@ table{
 }
 /*this is for favorites-notification.html page*/
 .removed-successfully{
-	top:18%;
+	top:15%;
 	position:fixed;
 	left:14%;
-	font-size:33px;
+	font-size:28px;
 	color:#2a8f0b;
 	
 }

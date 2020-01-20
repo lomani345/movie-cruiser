@@ -137,7 +137,7 @@ public class Movie {
     @Override
     public String toString() {
         DecimalFormat df = new DecimalFormat();
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
         return String.format("%-10s%-20s%-23s%-10s%-17s%-25s%-30s\n", movieId, title,
                 "$" + df.format(boxOffice), active == true ? "Yes" : "No", sdf.format(dateOfLaunch),

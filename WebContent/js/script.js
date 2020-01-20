@@ -1,8 +1,8 @@
-function validate() {
-    var title = document.forms["movie"]["title"].value;
-    var Gross = document.forms["movie"]["Gross"].value;
-    var dateOfLaunch = document.forms["movie"]["dateOfLaunch"].value;
-    var genre = document.forms["movie"]["genre"].value;
+function validateMovieForm() {
+    var title = document.forms["movieForm"]["title"].value;
+    var boxOffice = document.forms["movieForm"]["boxOffice"].value;
+    var dateofLaunch = document.forms["movieForm"]["dateofLaunch"].value;
+    var genre = document.forms["movieForm"]["genre"].value;
     var regexname = (/^.*[0-9].*$/);
 
     if (title == "") {
@@ -13,15 +13,15 @@ function validate() {
         alert("Title should have 2 to 100 characters.");
         return false;
     }
-    if (Gross == "") {
-        alert("Gross is required.");
+    if (boxOffice == "") {
+        alert("Box Office is required.");
         return false;
     }
-    if (!Gross.match(regexname)) {
-        alert("Gross has to be a number.");
+    if (!boxOffice.match(regexname)) {
+        alert("Box Office has to be a number.");
         return false;
     }
-    if (dateOfLaunch == "") {
+    if (dateofLaunch == "") {
         alert("Date of Launch is required");
         return false;
     }
